@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>ChallengeONEEncriptadorALURA</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>
+                <img src="imagenes/logo2.png" alt="">
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contenedorEntrada">
+                <input  type="text" name="" class="texto" placeholder="Ingrese el texto aquí" id="text">
+                <p class="infoText">Solo letras minúsculas y sin acento</p>
+                <div class="btns">
+                    <button type="submit" class="btn" id="btnEncrip">Encriptar!</button>
+                    <button type="submit" class="btn" id="btnDesen">Desencriptar!</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedorSalida">
+                <!-- <textarea name="" id="" cols="21" rows="5" id="textSalida" class="textSalidaC"></textarea> -->
+                <h1 class="textSalidaC" id="textSalida"></h1>
+                <div class="btnCopiar">
+                    <button type="submit" class="btn" id="btnCopiarText">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

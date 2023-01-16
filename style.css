@@ -1,0 +1,127 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../ChallengeONEEncriptadorALURA/imagenes/fondo.jpg);
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 20px;
+    left: 30px;
+    color: rgba(255, 255, 255, 0.068);
+}
+.contenedorEntrada{
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    top: 100px;
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.014);
+    border-radius: 5%;
+}
+.texto{
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    margin: 20px 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 535px;
+}
+.infoText{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    top: 320px;
+    margin: 0 30px;
+}
+.btns{
+    position: absolute;
+    top: 350px;
+    width: 500px;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+.btn{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+    .btn::after {
+    background-color: #fff;
+}
+.btn:hover::after {
+    transform: scaleX(1.1) scaleY(1.1);
+    opacity: 0;
+}
+.contenedorSalida{
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    top: 100px;
+    right: 150px;
+    background-color: rgba(255, 255, 255, 0.014);
+    border-radius: 5%;
+}
+.btnCopiar{
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    top: 350px;
+    right: 120px;
+}
+.textSalidaC{
+    display: flex;
+    justify-content: left;
+    color: white;
+    font-size: 22px;
+    margin: 20px 30px;
+    background-color: rgba(255, 255, 255, 0);
+    /* border: none; */
+}
+@media screen and (max-width: 1200px){
+    .contenedorEntrada{
+        text-align: center;
+        margin: 0 -150px;
+    }
+    .contenedorSalida{
+        position: absolute;
+        top: 600px;
+        text-align: center;
+        margin: 0 -230px;
+    }
+}
